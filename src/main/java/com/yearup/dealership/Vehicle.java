@@ -1,3 +1,5 @@
+package com.yearup.dealership;
+
 public class Vehicle {
 
     private int vin;
@@ -86,7 +88,7 @@ public class Vehicle {
 
     @Override
     public String toString() {
-        return "Vehicle{" +
+        return "com.yearup.dealership.Vehicle{" +
                 "vin=" + vin +
                 ", year=" + year +
                 ", make='" + make + '\'' +

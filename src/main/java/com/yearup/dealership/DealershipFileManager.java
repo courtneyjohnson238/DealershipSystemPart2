@@ -1,7 +1,7 @@
+package com.yearup.dealership;
+
 import java.io.*;
-import java.time.LocalDate;
-import java.time.LocalTime;
-import java.util.Scanner; // Import the Scanner class to read text files
+
 public class DealershipFileManager {
     public Dealership getDealership() {
         Dealership dealership = null;
@@ -52,7 +52,7 @@ public class DealershipFileManager {
                 bw.newLine();
             }
 
-            System.out.println("Dealership saved successfully to dealership.csv.");
+            System.out.println("com.yearup.dealership.Dealership saved successfully to dealership.csv.");
         } catch (IOException e) {
             e.printStackTrace();
 

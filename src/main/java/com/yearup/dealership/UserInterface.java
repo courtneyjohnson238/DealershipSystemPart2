@@ -1,3 +1,5 @@
+package com.yearup.dealership;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -153,7 +155,7 @@ public class UserInterface {
         Vehicle vehicle = new Vehicle(vin, year, make, model, type, color, mileage, price);
 
         dealership.addVehicle(vehicle);
-        System.out.println("Vehicle added successfully!");
+        System.out.println("com.yearup.dealership.Vehicle added successfully!");
         DealershipFileManager manager = new DealershipFileManager();
         manager.saveDealership(dealership);
     }
@@ -166,14 +168,14 @@ public class UserInterface {
         for (Vehicle vehicle : dealership.getAllVehicles()) {
             if (vehicle.getVin() == vin) {
                 dealership.removeVehicles(vehicle);
-                System.out.println("Vehicle removed successfully!");
+                System.out.println("com.yearup.dealership.Vehicle removed successfully!");
                 vehicleRemoved = true;
                 break;
             }
         }
 
         if (!vehicleRemoved) {
-            System.out.println("Vehicle not found. Please try again.");
+            System.out.println("com.yearup.dealership.Vehicle not found. Please try again.");
             return;
         }
 
