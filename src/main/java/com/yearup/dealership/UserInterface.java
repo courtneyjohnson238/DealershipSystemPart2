@@ -59,6 +59,9 @@ public class UserInterface {
                 case "9":
                     processRemoveVehicleRequest();
                     break;
+                case "10":
+                    scanner.nextLine();
+
                 case "99":
                     quit = true;
                     break;
